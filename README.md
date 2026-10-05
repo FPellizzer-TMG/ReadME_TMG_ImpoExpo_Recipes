@@ -12,18 +12,58 @@ ImpoExpo Recipes TMG è una web app creata da [TMG IMPIANTI S.p.A.](https://www.
 
 ## Installazione
 
-1. **Avviare l' .exe -> `ImpoExpo Recipe TMG Setup [x.x.x].exe`**.
-<p align="center">
-    <img alt="Downloading" src="./renderer/images/HowTo/Downloading.png" />
-</p>
+1. **Avviare l' .exe -> `Installer TMG ImpoExpo Recipes.exe`**.
+    <p align="center">
+        <img alt="iconDesktopAppInstaller" src="./renderer/images/HowTo/iconDesktopAppInstaller.png" />
+    </p>
+
+    > step 1.1
+        <p align="center">
+            <img alt="Downloading" src="./renderer/images/HowTo/Downloading.png" />
+        </p>
+    
+    >step 1.2
+        <p align="center">
+            <img alt="Downloading" src="./renderer/images/HowTo/Downloading1.png" />
+        </p>
+        
+    > step 1.3
+        <p align="center">
+            <img alt="Downloading" src="./renderer/images/HowTo/Downloading2.png" />
+        </p>
+    
+    >step 1.4
+        <p align="center">
+            <img alt="Downloading" src="./renderer/images/HowTo/Downloading3.png" />
+        </p>
+        
+    > step 1.5
+        <p align="center">
+            <img alt="Downloading" src="./renderer/images/HowTo/Downloading4.png" />
+        </p>
+    
+    >step 1.6
+        <p align="center">
+            <img alt="Downloading" src="./renderer/images/HowTo/Downloading5.png" />
+        </p>
+        
+    >step 1.7
+        <p align="center">
+            <img alt="Downloading" src="./renderer/images/HowTo/Downloading6.png" />
+        </p>
+
 
 2. **Verrà creata la cartella**:
-   <br>`impoexpo-app`
-   <br> che conterrà il file `.exe` e `l'unistaller`
+   <br>`TMG ImpoExpo Recipes`
+   <br> che conterrà il file `.exe` e `l'unistaller` e tutti i files necessari per far funzionare l'app
 
 3. **la cartella sarà situata nel seguente path**:
    ```bash
-   C:\Users\[user]\AppData\Local\Programs\impoexpo-app
+   Solo per utente locale:
+        C:\Users\[user]\AppData\Local\Programs\TMG ImpoExpo Recipes
+
+   Per tutti gli utenti:
+        C:\Program Files (x86)\TMG ImpoExpo Recipes
     ```
 4. **In automatico verrà creato il collegamento su desktop**
 <p align="center">
@@ -72,7 +112,11 @@ ImpoExpo Recipes TMG è una web app creata da [TMG IMPIANTI S.p.A.](https://www.
 ## Come funziona ?
 1. **Avviare l'app `ImpoExpo Recipe TMG` sul desktop <br> o avviare l' .exe nella cartella**
     ```bash
-   C:\Users\[user]\AppData\Local\Programs\impoexpo-app\ImpoExpo Recipe TMG.exe
+   Solo per utente locale:
+        C:\Users\[user]\AppData\Local\Programs\TMG ImpoExpo Recipes\ImpoExpo_Recipes.exe
+
+   Per tutti gli utenti:
+        C:\Program Files (x86)\TMG ImpoExpo Recipes\ImpoExpo_Recipes.exe
     ```
 
 2. **Si aprirà la pagina iniziale**:
@@ -90,10 +134,13 @@ ImpoExpo Recipes TMG è una web app creata da [TMG IMPIANTI S.p.A.](https://www.
 
 4. **Connesso ?** :
     <br>Se la connessione andrà a buon fine comparirà un messaggio in verde che indichera la buona riuscirta della connessione e verrà indicato in basso a sinistra lo stato.
-    > Connection Succeded at **opc.tcp://...**
+    >  **Client Connected Successfully.**
 
     <p align="center">
     <img alt="connectionDone" src="./renderer/images/HowTo/connectionDone.png" />
+    </p>
+    <p align="center">
+    <img alt="connectionDone" src="./renderer/images/HowTo/connectionDone1.png" />
     </p>
     Altrimenti verrà un messaggio di errore in rosso, in base al tipo di errore, con il suggerimento di cosa si ha sbagliato.
 
@@ -118,18 +165,11 @@ Premere il pulsante `EXPORT`
 
 > Una volta selezionato il controller sul quale operare si aprirà un `popUp di conferma`
 
-se si confermerà si avvierà il processo di `esportazione` (backup) di tutte le ricette esistenti.<br>
-Fino alla fine dell'operazione nello schermo sarà disabilitato qualsiasi altra possibilità di operazione. Lo schermo dell'applicazione diventerà più scuro e il puntatore del mouse sarà in caricamento.
-> **NOTA:** ci sarà sempre in basso al centro i messaggi di stato di cosa sta processando l'applicazione
-<p align="center">
-    <img alt="exportGoing" src="./renderer/images/HowTo/export/exportGoing.png" />
-</p>
-
-Finita l'operazione di `esportazione` (backup) vi verrà chiesto dove salvare il file di esporazione:
+Prima di iniziare l'operazione di `esportazione` (backup) vi verrà chiesto dove salvare il file di esporazione:
 1. **Path predefinito**:
-    In automatico vi verrà mostrato il path predefinito dove salvare che è:
+    In automatico vi verrà mostrato l'ultimo path selezionato:
     ```bash
-    C:\Users\[user]\ImpoExpo_Backup_Recipes
+    C:\Users\[user]\...
     ```
 
 2. **Path personale**:
@@ -137,9 +177,18 @@ Finita l'operazione di `esportazione` (backup) vi verrà chiesto dove salvare il
 <p align="center">
     <img alt="saveExport" src="./renderer/images/HowTo/export/saveExport.png" />
 </p>
+se si confermerà si avvierà il processo di `esportazione` (backup) di tutte le ricette esistenti.<br>
+Fino alla fine dell'operazione nello schermo sarà disabilitato qualsiasi altra possibilità di operazione. Lo schermo dell'applicazione diventerà più scuro e il puntatore del mouse sarà in caricamento.
+
+> **NOTA:** ci sarà sempre in basso al centro i messaggi di stato di cosa sta processando l'applicazione
+<p align="center">
+    <img alt="exportGoing" src="./renderer/images/HowTo/export/exportGoing.png" />
+</p>
+
+
 
 Salvato il file vi verrà mostrato nei messaggi l'intero path di salvataggio e vi comparirà l'alert di successo.
->Backup Done
+>Export finished successfully
 <p align="center">
     <img alt="exportDone" src="./renderer/images/HowTo/export/exportDone.png" />
 </p>
@@ -156,9 +205,9 @@ Premere il pulsante `RESTORE ALL` <br>
 premete il pulsante **Scegli file** e scegliete il file che volete `importare` (restore) 
 > Vi uscirà un PopUp per la scelta del file
 1. **Path predefinito**:
-    In automatico vi verrà aperto il path predefinito per scegliere il file che è:
+    In automatico vi verrà mostrato l'ultimo path selezionato:
     ```bash
-    C:\Users\[user]\ImpoExpo_Backup_Recipes
+    C:\Users\[user]\...
     ```
 
 2. **Path personale**:
@@ -178,7 +227,7 @@ Premere il pulsante di `Restore`
 
 Procedere
 <p align="center">
-    <img alt="restoreAllConfirmDialog" src="./renderer/images/HowTo/restoreAll/restoreAllConfirmDialog.png" />
+    <img alt="restoreAllStart" src="./renderer/images/HowTo/restoreAll/restoreAllStart.png" />
 </p>
 
 Una volta confermato si avvierà il processo di `importazione` (restore All) di tutte le ricette esistenti nel file selezionato.<br>
@@ -187,15 +236,19 @@ Fino alla fine dell'operazione nello schermo sarà disabilitato qualsiasi altra 
 
 una volta teminato il processo vi comparirà l'alert di successo con i suoi relativi messaggi
 
-> All recipes restored!
+<p align="center">
+    <img alt="restoreAllWaitPLC" src="./renderer/images/HowTo/restoreAll/restoreAllWaitPLC.png" />
+</p>
+
+> Import finished successfully
 <p align="center">
     <img alt="restoreAllDone" src="./renderer/images/HowTo/restoreAll/restoreAllDone.png" />
 </p>
 
 <br>
 
-### RESTORE
-selezionare il check su `RESTORE` e premere il pulsante `START` <br>
+### RESTORE ONE
+Premere il pulsante `RESTORE` <br>
 >Si aprirà la pagina di **RESTORE**
 <p align="center">
     <img alt="restorePage" src="./renderer/images/HowTo/restore/restoreOnePage.png" />
@@ -204,20 +257,20 @@ selezionare il check su `RESTORE` e premere il pulsante `START` <br>
 premete il pulsante **Scegli file** e scegliete il file che volete `importare` (restore) 
 > Vi uscirà un PopUp per la scelta del file
 1. **Path predefinito**:
-    In automatico vi verrà aperto il path predefinito per scegliere il file che è:
+   In automatico vi verrà mostrato l'ultimo path selezionato:
     ```bash
-    C:\Users\[user]\ImpoExpo_Backup_Recipes
+    C:\Users\[user]\...
     ```
 
 2. **Path personale**:
     Volendo potete prendere il file in un'altra cartella a vostra scelta dove avete salvato il file in precedenza
 <p align="center">
-    <img alt="restoreSelectJson" src="./renderer/images/HowTo/restore/restoreSelectJson.png" />
+    <img alt="restoreSelectTXT" src="./renderer/images/HowTo/restore/restoreSelectTXT.png" />
 </p>
 
-> **NOTA:** Una volta selezionato il file vi verrà mostrato sullo schermo il path completo del file e le **ricette importabili**
+> **NOTA:** Una volta selezionato il file vi verrà mostrato sullo schermo il path completo del file 
 ```bash
-    Possible number Recipe : 1,2,3...
+    nel menù a tendina saranno visibili tutte le ricette importabili contenute nel file selezionato
 ```
 
 <p align="center">
@@ -226,6 +279,13 @@ premete il pulsante **Scegli file** e scegliete il file che volete `importare` (
 
 Selezionare il numero della ricetta che si vuole `importare` (Restore) <br>
 e premere il pulsante di `Restore`
+<p align="center">
+    <img alt="restoreSelectedJson" src="./renderer/images/HowTo/restore/restoreOneSelectedTXT1.png" />
+</p>
+<p align="center">
+    <img alt="restoreSelectedJson" src="./renderer/images/HowTo/restore/restoreOneSelectedTXT2.png" />
+</p>
+
 >Si aprirà un PopUP di conferma dell'azione
 
 Procedere
@@ -239,33 +299,10 @@ Fino alla fine dell'operazione nello schermo sarà disabilitato qualsiasi altra 
 
 una volta teminato il processo vi comparirà l'alert di successo con i suoi relativi messaggi
 
-> Recipe [num] restored!
+> Import finished successfully
 <p align="center">
     <img alt="restoreDone" src="./renderer/images/HowTo/restore/restoreOneDone.png" />
 </p>
-
-<br>
-
-## Pulsanti 
-- ### <img alt="Home" src="./renderer/images/HowTo/menuButton.png" width="164" /> Menu
-    1. Home
-        <br>Ti riporta alla schermata di `Home`, anche quando sei sei connesso ad una macchina, disconnettendoti da quest'ultima.
-    2. txt to Excel
-        <br>Ti porta alla schermata di `txtToExcel`, anche quando sei sei connesso ad una macchina, disconnettendoti da quest'ultima.
-    3. Settings
-        <br>Ti porta alla schermata di `Settings`, anche quando sei sei connesso ad una macchina, disconnettendoti da quest'ultima.
-    4. Help
-        <br>Ti apre un PopUp che contiene informazioni sull'app e link utili per scoprire il funzionamento dell'app.
-    5. Exit
-        <br>Esce dall'applicazione.
-
-- ### <img alt="Back" src="./renderer/images/HowTo/Back.png" width="64" /> Back
-    Nelle schermate di `Backup`, `Restore` e `Restore All` ti permette di tornare indietro alla selezione dell'operazione da fare
-    >è presente anche nelle pagine di `Settings` per tornare indietro
-
-- ### <img alt="user" src="./renderer/images/HowTo/loginButton.png" width="158" /> +  <img alt="user" src="./renderer/images/HowTo/user.png" width="158" /> Login
-    entrambe le selezioni fanno apparire il PopUIp di `Login`
-    >  **NOTA:** nel trapezio in alto a destra verrà mostrato con che utente si è loggati
 
 <br>
 
@@ -274,8 +311,45 @@ una volta teminato il processo vi comparirà l'alert di successo con i suoi rela
 >Si aprirà la pagina dove sarà possibile inserire il file txt esportato e lo convertirà in un file excel dove i dati saranno più facili da leggere
 
 <p align="center">
-    <img alt="restoreDone" src="./renderer/images/HowTo/txtToExcel/pagetxtToExcel.png" />
+    <img alt="pagetxtToExcel" src="./renderer/images/HowTo/txtToExcel/pagetxtToExcel.png" />
 </p>
+<p align="center">
+    <img alt="pagetxtToExcelTXT" src="./renderer/images/HowTo/txtToExcel/pagetxtToExcelTXT.png" />
+</p>
+<p align="center">
+    <img alt="pagetxtToExcel1" src="./renderer/images/HowTo/txtToExcel/pagetxtToExcel1.png" />
+</p>
+<p align="center">
+    <img alt="pagetxtToExcelFile" src="./renderer/images/HowTo/txtToExcel/pagetxtToExcelFile.png" />
+</p>
+<p align="center">
+    <img alt="pagetxtToExcelDone" src="./renderer/images/HowTo/txtToExcel/pagetxtToExcelDone.png" />
+</p>
+<br>
+
+## Pulsanti 
+- ### Menu Unconnected -><img alt="Home" src="./renderer/images/HowTo/menuButton.png" width="164" />Menu Connected -><img alt="Home" src="./renderer/images/HowTo/menuButton1.png" width="164" /> 
+    1. **Home**
+        <br>Ti riporta alla schermata di `Home`, anche quando sei sei connesso ad una macchina, disconnettendoti da quest'ultima.
+    2. **[Connected Machine]**
+        <br>Ti riporta alla schermata delle operazioni possibili della `[Connected Machine]`
+        <br>    2.1. **[Disconnected]** piccola Icona alla fine del pulsante che permette la disconnessione, ti riporterà alla schermata di `Home`
+    3. **txt to Excel**
+        <br>Ti porta alla schermata di `txtToExcel`, anche quando sei sei connesso ad una macchina
+    4. **Settings**
+        <br>Ti porta alla schermata di `Settings`, anche quando sei sei connesso ad una macchina,
+    5. **Help**
+        <br>Ti apre un PopUp che contiene informazioni sull'app e link utili per scoprire il funzionamento dell'app.
+    6. **Exit**
+        <br>Esce dall'applicazione.
+
+- ### Back<br><img alt="Back" src="./renderer/images/HowTo/Back.png" width="64" /> 
+    Nelle schermate di `Backup`, `Restore` e `Restore All` ti permette di tornare indietro alla selezione dell'operazione da fare
+    >è presente anche nelle pagine di `Settings` per tornare indietro
+
+- ### Login<br><img alt="user" src="./renderer/images/HowTo/loginButton.png" width="158" /> +  <img alt="user" src="./renderer/images/HowTo/user.png" width="158" /> 
+    entrambe le selezioni fanno apparire il PopUIp di `Login`
+    >  **NOTA:** in alto a destra è possibile visualizzare l'utente con cui si è loggati
 
 <br>
 
@@ -291,8 +365,11 @@ una volta teminato il processo vi comparirà l'alert di successo con i suoi rela
 <br>
 
 ## Login
-- `ADMIN` Può esesguire tutto
-- `OPERATOR` Può fare tutto tranne andare nelle impostazioni (`Settings`)
+tutte le operazioni sono bloccate da una previa autenticazione, l'app infatti si avvia sempre come `guest` <br>
+l'app ha 3 livelli di autorità:
+- `Tmg02` Può esesguire tutto
+- `Tmg01` e `Client02` Può fare tutto tranne fare le configurazioni manuali ed eliminare le configurazioni nella pagina (`Settings`)
+- `Guest` di default all'avvio, può solo consultare la sezione `Help` ed accedere alla sezione di `Login`
 <p align="center">
 <img alt="loginCFG" src="./renderer/images/HowTo/login.png" />
 </p>
@@ -300,8 +377,8 @@ una volta teminato il processo vi comparirà l'alert di successo con i suoi rela
 <br><br>
 
 # Settings
-### Login
-effetuare il login come *`amministratore`* per effetuare la `configurazione`
+
+>Come scritto nel capitolo `Login` in questa pagina solo `Tmg02` può esesguire tutto
     
 <br>
     una volta effettuato con successo il login si aprira la pagina dove sarà possibile selezionare le opeazioni di configurazione
@@ -314,21 +391,39 @@ effetuare il login come *`amministratore`* per effetuare la `configurazione`
 
 <br>
 
-### Import
-Si aprirà la pagina di `Import` dove sarà possibile inportare un file di copnfigurazione .env
+### Import Cfg
+Si aprirà un PopUp dove sarà possibile selezionare il file di configurazione *`.config`* da importare
+
+> azione possibile a tutti gli utenti autentificati
     
 <br>
 
 <p align="center">
 <img alt="importCFG" src="./renderer/images/HowTo/cfg/importCfg.png" />
 </p>
-    una volta effettuato con successo l'import si ritornerà al login con la configurazione nuova importata
+<p align="center">
+<img alt="importCFG" src="./renderer/images/HowTo/cfg/importCfgDone.png" />
+</p>
+
 
 <br>
 
-### Manual
-### First Time Config
-Si aprirà la pagina di `Manual` dove sarà possibile iniziare da zero una configurazione
+### Export Cfg
+Si aprirà un PopUp dove sarà possibile selezionare dove salvare in un file *`.config`* l'attuale configurazione presente nell'app 
+
+> azione possibile a tutti gli utenti autentificati
+
+<p align="center">
+<img alt="exportCFG" src="./renderer/images/HowTo/cfg/exportCfg.png" />
+</p>
+<p align="center">
+<img alt="exportCFG" src="./renderer/images/HowTo/cfg/exportCfgDone.png" />
+</p>
+
+<br>
+
+### Manual Cfg
+Si aprirà la pagina di `Manual` dove sarà possibile manualmente modificare o creare da zero una configurazione
 
 <br>
 
@@ -338,26 +433,40 @@ Si aprirà la pagina di `Manual` dove sarà possibile iniziare da zero una confi
 
 <br>
 
+Premendo su `Add a new Machine` è possibile impostare da zero i dati necessari per la connessione ad una macchina
 
 <p align="center">
 <img alt="firstTimeAddMachineMod" src="./renderer/images/HowTo/cfg/manualCfgmodAdd.png" />
 </p>
+<p align="center">
+<img alt="firstTimeAddMachineMod1" src="./renderer/images/HowTo/cfg/manualCfgmodAdd1.png" />
+</p>
 
->una volta effettuato con successo la nuova configurazione si ritornerà al login per  attivare la nuova configurazione
+>una volta compilati i dati correttamente è possibile salvare la configurazione 
+
+verrà notificato nella barra dei messaggi l'avvenuto successo o errore
+<p align="center">
+<img alt="firstTimeAddMachineMod1" src="./renderer/images/HowTo/cfg/manualCfgmodAdd2.png" />
+</p>
 
 <br>
 <br>
 
 ## Config già esistente
-Si aprirà la pagina di `Manual` dove sarà possibile modificare la configurazione attuale e  iniziare da zero una nuova aggiuntiva configurazione
+Si aprirà la pagina di `Manual` dove sarà possibile modificare la configurazione attuale selezionando la macchina dal menù a tendina
+
+> **NOTA** se il menu a tendina è vuoto significa che non ci sono configurazioni presenti
 
 <br>
 
 <p align="center">
 <img alt="modMachine" src="./renderer/images/HowTo/cfg/manualCfgmod.png" />
 </p>
+<p align="center">
+<img alt="modMachine1" src="./renderer/images/HowTo/cfg/manualCfgmod1.png" />
+</p>
 
->una volta effettuato con successo la configurazione si ritornerà alla Home per attivare la nuova configurazione
+>una volta modificati i dati correttamente è possibile salvare la configurazione 
 
 <br>
 
@@ -375,18 +484,9 @@ Annulla le modifiche fatte sulla nuova macchina creata
 
 <br>
 
-### Export Cfg
->Si avvierà la funzione di `Export` dove sarà possibile esportare la configurazione in un file di configurazione .env 
-
-<br>
-    una volta effettuato con successo l'export vi verrà chiesto dove salvare il vostro file di configurazione esportato
-
-<br>
-
 ### Delete Cfg
 >Si avvierà la funzione di `Delete` dove sarà possibile eliminare la configurazione e ripartire da zero 
-
-<br>
-    una volta effettuato con successo l'eliminazione si ritornerà al login per attivare la modifica fatta
-    
+<p align="center">
+<img alt="deleteCFG" src="./renderer/images/HowTo/cfg/deleteCfg.png" />
+</p>
 <br>
