@@ -128,6 +128,8 @@ ImpoExpo Recipes TMG è una web app creata da [TMG IMPIANTI S.p.A.](https://www.
    Eseguire Login       ->  Tramite l'icona dell'utente in alto a destra o la sezione login in basso a sinistra
 
    Seleziona macchina   ->  Seleziona tramite il menu a tendina la macchina sulla quale connettersi
+
+   NOTA: Menu a tendina vuoto   ->  Andare nella pagina di impostazioni e verificare che ci siano delle configurazioni, vedi sezione SETTINGS
     ```
     Poi premi **`Connect`**
     <br><br>
